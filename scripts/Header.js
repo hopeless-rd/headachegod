@@ -123,33 +123,4 @@ class Header {
     }
 }
 
-
 export default Header;
-
-document.body.style.display = 'flex';
-
-
-
-// class Header {
-//     constructor() {
-    //   this.themeToggleCheckbox = document.getElementById('theme-toggle');
-    //   this.currentTheme = localStorage.getItem('theme') || 'dark';
-    //   this.applyTheme();
-    //   this.addEventListeners();
-//     }
-  
-    // applyTheme() {
-    //   document.body.classList.toggle('light-theme', this.currentTheme === 'light');
-    //   this.themeToggleCheckbox.checked = this.currentTheme === 'light';
-    // }
-  
-    // addEventListeners() {
-    //   this.themeToggleCheckbox.addEventListener('change', () => {
-    //     this.currentTheme = this.themeToggleCheckbox.checked ? 'light' : 'dark';
-    //     document.body.classList.toggle('light-theme', this.currentTheme === 'light');
-    //     localStorage.setItem('theme', this.currentTheme);
-    //   });
-    // }
-//   }
-
-// export default Header;
