@@ -1,0 +1,110 @@
+@use '../helpers' as *;
+
+.portfolio {
+  &__container {
+    padding-top: rem(100);
+    animation: fadeIn 1s forwards;
+    text-align: center;
+
+    h2 {
+      margin-bottom: rem(30);
+      color: var(--color-light);
+      font-family: 'Macondo';
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(30);
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: rem(700);
+    height: rem(300);
+    border-radius: rem(8);
+    overflow: hidden;
+    background: linear-gradient(145deg, #1a1a1a, #000000);
+    box-shadow: rem(5) rem(5) rem(10) #0a0a0a, rem(-5) rem(-5) rem(10) #1a1a1a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: rem(5) rem(5) rem(15) #0a0a0a, -rem(-5) -rem(-5) rem(-15) #1a1a1a;
+
+      .portfolio__overlay {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: left;
+
+    h3 {
+      margin: 0;
+      font-family: 'Macondo', sans-serif;
+      color: #00bcd4;
+    }
+
+    p {
+      margin: rem(10) 0;
+      font-family: 'Macondo', sans-serif;
+      color: #ffffff;
+    }
+
+    .portfolio__link {
+      display: inline-block;
+      padding: rem(10) rem(20);
+      border: rem(1) solid #00bcd4;
+      border-radius: rem(4);
+      color: #00bcd4;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background: #00bcd4;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,112 @@
+@use 'helpers' as *;
+
+
+:root {
+    --color-light: #FFFF;
+    
+
+    --background-events: linear-gradient(135deg, #0f0c29, #302b63, #24243e, rgb(6, 6, 71));
+
+
+    --color-blue: #00bcd4 ;
+    --color-dark: #000000;
+    // --color-dark: linear-gradient(135deg, #000428, #004e92);
+    // linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    --color-grey: #98989A;
+    --color-grey-: #666;
+    
+    --color-active:#B8B8B8;
+    --color-green: rgb(0, 255, 0);
+    --color-red: #ff0202;
+    --color-modal: #0094a8;
+    --color-hover: #a5e22b ;
+
+
+    --color-bg-hover: #3c444e;
+    --font-family-base: 'Roboto', sans-serif;
+
+    --container-width: #{rem(1600)};
+    --container-padding-x: #{rem(16)}; 
+
+    --border: #{rem(1)} solid var(--color-light);
+
+    --transition-duration: 0.2s;
+
+
+    @include laptop {
+        --container-width: #{rem(1280)};
+    }
+
+
+    .light-theme {
+        --color-light: #ffffff;
+        --color-dark: #3b60c5;
+        // --color-dark: linear-gradient(135deg, #2b1055, #7597de);
+
+    }
+
+}
+
+// 1. Pastel Colors (Пастельные цвета)
+// #FAD02E — яркий золотистый. 6/10
+// #F28D35 — пастельный оранжевый. 10/10
+// #D83367 — нежный розовый. 10/10
+// #6A4C93 — лавандовый. 10/10
+// 2. Nature-Inspired Colors (Цвета природы)
+// #4B9F8E — изумрудный. 6/10
+// #E6A57E — коричнево-бежевый. 4/10
+// 3. Neutrals (Нейтральные цвета)
+// #F5F5F5 — очень светлый серый (почти белый). 10/10
+// #B8B8B8 — светлый серый.
+// #333333 — темно-серый (почти черный).
+// #DDDDDD — светло-серый.
+// #8A8A8A — нейтральный серый.
+// 4. Bold Colors (Яркие цвета)
+// #E63946 — яркий красный.
+// #F1FAEE — почти белый, но с легким голубым оттенком.
+// #457B9D — синий, цвет моря. 8/10
+// #1D3557 — темно-синий. 7/10
+// 5. Warm Colors (Теплые цвета)
+// #F4A261 — теплый оранжевый. 8/10
+// #E76F51 — насыщенный коралловый. 8/10
+// #2A9D8F — яркий зеленовато-синий. 7/10
+// 6. Cool Colors (Холодные цвета)
+// #6CACE4 — холодный голубой. 8/10
+// #1D4E89 — глубокий синий. 9/10
+// 7. Vibrant Colors (Яркие и насыщенные)
+// #FF6347 — томатный.
+// #FF4500 — оранжево-красный.
+// #32CD32 — яркий зеленый.
+// #8A2BE2 — яркий фиолетовый.
+
+
+/* 11 */
+// background: linear-gradient(4deg, #5462c3, #ba872c);
+
+
+/* 14 */
+// background: linear-gradient(3deg, #e6d16c, #16014c);
+
+/* 15 */
+// background: linear-gradient(66deg, #e38010, #1535bf);
+
+/* 16 */
+// background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+
+
+
+// /* 25 */
+// background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+
+
+/* 27 */
+// background: linear-gradient(85deg, #fb63f9, #c2e534);
+
+/* 28 */
+// background: linear-gradient(21deg, #dd03e4, #5611ec); // 10/10
+
+/* 29 */
+// background: linear-gradient(4deg, #5462c3, #ba872c);
+
+/* 30 */
+// background: linear-gradient(81deg, #ddb35f, #7409c7);

@@ -1,0 +1,68 @@
+@use '../helpers' as *;
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    &__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: rem(90);
+    height: rem(46);
+    background-color: none;
+    border-radius: rem(30);
+    cursor: pointer;
+    border: rem(2) solid var(--color-light);
+
+    transition: background-color var(--transition-duration);
+    
+        &:hover {
+            border-color: var(--color-grey)
+        }
+
+
+    }
+
+    &__icon {
+    position: absolute;
+    font-size: rem(16);
+    z-index: 100;
+
+    &--sun {
+        left: rem(14);
+        top: rem(12);
+        color: rgb(0, 0, 0);
+    }
+
+    &--moon {
+        top: rem(12);
+        right: rem(13);
+        color: rgba(217, 152, 0, 0.767);
+    }
+    
+    }
+
+    &__slider {
+    position: absolute;
+    width: rem(46);
+    height: rem(46);
+    background-color: var(--color-light);
+    border-radius: inherit;
+    transition: all 0.3s ease-in-out;
+
+    }
+    @include mobile {
+        justify-content: center;
+    }
+}
+
+#theme-toggle {
+    display: none;
+
+    &:checked + .theme-switcher__label .theme-switcher__slider {
+    transform: translateX(rem(40));
+    }
+}
+

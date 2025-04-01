@@ -1,0 +1,100 @@
+@use '../helpers' as *;
+
+.about {
+  padding-top: rem(250);
+  padding-bottom: rem(290);
+  max-width: rem(1200);
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    font-size: fluid(60, 40);
+    margin-bottom: rem(30);
+    font-family: 'LilOne', sans-serif;
+    
+  }
+
+  &__content {
+    display: flex;
+    
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    a:hover {
+      color: var(--color-grey);
+    }
+  }
+
+  &__right {
+    @include mobile {
+      padding-top: rem(50);
+
+    }
+  }
+
+  &__text {
+    font-family: 'Jersey15', sans-serif;
+    color: white;
+    font-size: fluid(30, 20);
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// &__photo {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   margin: 0 auto;
+
+
+//   img {
+//     object-fit: cover;
+//     border: rem(3) solid #00bcd4; // Неоновый голубой
+//     box-shadow: 0 0 10px #00bcd4;
+//     transition: box-shadow 0.3s ease-in-out;
+
+//     &:hover {
+//       box-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4;
+//     }
+//   }
+
+//   span {
+//     display: flex;
+//     justify-content: center;
+//     transition: 0.2s;
+//     font-size: fluid(26, 22);
+//     gap: rem(5);
+//     text-align: center;
+//     color: #00bcd4;
+//     text-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4;
+
+//     &:hover {
+//       color: #f2e900;
+//       text-shadow: 0 0 5px #f2e900, 0 0 10px #f2e900;
+//     }
+//   }
+// }

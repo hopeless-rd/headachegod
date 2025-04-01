@@ -1,0 +1,15 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/about';
+@use 'blocks/logo';
+@use 'blocks/burger-button';
+@use 'blocks/header';
+@use 'blocks/theme';
+@use 'blocks/glitch';
+@use 'blocks/skills';
+@use 'blocks/portfolio';
+@use 'blocks/footer';

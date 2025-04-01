@@ -1,0 +1,68 @@
+@use '../helpers' as *;
+
+@use '../helpers' as *;
+
+.footer {
+    user-select: none;
+    padding-top: rem(200) ;
+
+    &-inner {
+        border-top: var(--border);
+        padding-block: fluid(40, 20);
+    }
+
+
+    &__extra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include laptop {
+            padding-block: rem(24);
+            
+        }
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: rem(20);
+        } 
+    }
+
+    &__soc1als {
+        @include mobile {
+            order: -1;
+        }
+    }
+}
+
+
+.soc1als {
+    &__list {
+        display: flex;
+        column-gap: rem(20);
+        
+        @include laptop {
+            column-gap: rem(14);
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__link {
+        color: var(--color-light);
+        flex-direction: column;
+        align-items: center;
+        gap: rem(6); 
+        padding: rem(5) rem(10);
+        border-radius: rem(10);
+        border: rem(1) solid var(--color-dark);
+
+        &:hover {
+            background-color: var(--color-bg-hover);
+            border: var(--border);
+        }
+    }
+}
+

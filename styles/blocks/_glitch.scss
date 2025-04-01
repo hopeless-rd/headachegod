@@ -1,0 +1,78 @@
+@use '../helpers' as *;
+
+.glitch {
+    position: relative;
+    color: var(--color-light);
+    animation: glitch-animation 1s infinite;
+  
+  &:before,
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+  }
+  
+  &:before {
+    left: rem(2);
+    text-shadow: rem(-2) 0 red;
+    clip: rect(rem(24), rem(550), rem(90), 0);
+    animation: glitch-animation 2s infinite;
+  }
+  
+  &:after {
+    left: rem(-2);
+    text-shadow: rem(-2) 0 rgb(8, 10, 132);
+    clip: rect(rem(85), rem(550), rem(140), 0);
+    animation: glitch-animation 3s infinite;
+  }
+  
+  @keyframes glitch-animation {
+    0% {
+        clip: rect(rem(42), rem(9999), rem(44), 0);
+        transform: skew(0.3deg);
+    }
+    10% {
+        clip: rect(rem(12), rem(9999), rem(60), 0);
+        transform: skew(0.6deg);
+    }
+    20% {
+        clip: rect(rem(85), rem(9999), rem(140), 0);
+        transform: skew(0.3deg);
+    }
+    30% {
+        clip: rect(rem(42), rem(9999), rem(44), 0);
+        transform: skew(0.6deg);
+    }
+    40% {
+        clip: rect(rem(12), rem(9999), rem(60), 0);
+        transform: skew(0.3deg);
+    }
+    50% {
+        clip: rect(rem(85), rem(9999), rem(140), 0);
+        transform: skew(0.6deg);
+    }
+    60% {
+        clip: rect(rem(42), rem(9999), rem(44), 0);
+        transform: skew(0.3deg);
+    }
+    70% {
+        clip: rect(rem(12), rem(9999), rem(60), 0);
+        transform: skew(0.6deg);
+    }
+    80% {
+        clip: rect(rem(85), rem(9999), rem(140), 0);
+        transform: skew(0.3deg);
+    }
+    90% {
+        clip: rect(rem(42), rem(9999), rem(44), 0);
+        transform: skew(0.6deg);
+    }
+    100% {
+        clip: rect(rem(12), rem(9999), rem(60), 0);
+        transform: skew(0.3deg);
+    }
+  }
+
+}

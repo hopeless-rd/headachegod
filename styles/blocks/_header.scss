@@ -1,0 +1,121 @@
+@use '../helpers' as *;
+
+.header {
+    &__body {
+        padding-block: rem(24);
+        background-color: var(--color-dark);
+
+
+        @include mobile {
+            padding-block: rem(20);
+        }
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 1rem;
+        }
+    }
+
+    &__overlay {
+        z-index: 10;
+
+        @include mobile-above {
+            display: contents;
+        }
+
+        @include mobile {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 3rem;
+            inset: 0;
+            padding: 1rem;
+            background-color: var(--color-);
+            transition-duration: var(--transition-duration);
+            backdrop-filter: blur(rem(20));            
+            &:not(.is-active) {
+                @include hide;
+                
+                translate: 100%;
+            }
+        }
+    }
+
+    &__menu {
+        @include mobile {
+            overflow-y: auto;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: rem(16);
+
+            padding: rem(10);
+            @include laptop {
+                column-gap: rem(6);
+            }
+
+            @include mobile {
+                flex-direction: column;
+                row-gap: 1rem;
+            }
+
+        }
+
+        &-item {
+            position: relative;
+      
+            &--dropdown {
+                &:hover .header__submenu {
+                    display: block;
+                }
+
+                @include mobile {
+                    &:hover .header__submenu {
+                    display: none;
+                }
+              }
+            }
+
+            
+
+          }
+
+        &-link {
+            padding: rem(6) rem(16);
+            font-weight: 500;
+            color: var(--color-grey);
+
+            // @include laptop {
+            //     padding: rem(4) rem(12);
+            // }
+        
+
+            &.is-active {
+                color: var(--color-light);
+                border-radius: rem(10);
+                border: var(--border);
+
+
+
+                &:hover {
+                    background-color: var(--color-grey);
+
+
+                    
+    
+                }
+            }
+        }    
+    }
+
+
+}
+
+
+
+

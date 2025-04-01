@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headache</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./scripts/main.js" type="module"></script>
+    <link rel="shortcut icon" href="./icons/heart.svg" type="image/x-icon">
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__body">
+      <div class="header__body-inner container">
+        <a class="header__logo logo" href="https://t.me/headachegod" title="Telegram">
+          <span>♡</span>
+        </a>
+
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#skills">Skills</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+            <div class="theme-switcher">
+              <input type="checkbox" id="theme-toggle" aria-label="Переключить тему">
+              <label for="theme-toggle" class="theme-switcher__label">
+                <span class="theme-switcher__icon theme-switcher__icon--moon"><svg height="18px" version="1.1" viewBox="0 0 32 32" width="18px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Sunny" stroke="none" stroke-width="1"><g stroke="#979797" stroke-width="2" transform="translate(2.000000, 2.000000)"><circle cx="14" cy="14" id="Oval-4" r="8"/><path d="M14,0 L14,3 M23.8994949,4.10050506 L21.7781746,6.22182541 M28,14 L25,14 M23.8994949,23.8994949 L21.7781746,21.7781746 M14,28 L14,25 M4.10050506,23.8994949 L6.22182541,21.7781746 M3.83475851e-17,14 L3,14 M4.10050506,4.10050506 L6.22182541,6.22182541" id="Path-7" stroke-linecap="round"/></g></g></svg></span>
+                <span class="theme-switcher__icon theme-switcher__icon--sun"><svg class="feather feather-moon" fill="none" height="18px" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+
+                <span class="theme-switcher__slider"></span>
+              </label>
+            </div>
+        </div>
+        
+
+        <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="" title="" data-js-header-burger-button>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="about" id="about">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__right">
+            <h1 class="about__title glitch" data-text="ABOUT ME" translate="no">ABOUT ME</h1>
+
+            <div class="about__text">
+              <p>My name is Egor, and I am 22 years old. I am a frontend developer with a year of active experience in creating simple landing pages. I have completed my vocational education as a technician-programmer. My diploma project was a website for a tour booking agency. I am passionate about my work and eager to learn something new every day to reach new heights. I am open to new projects and collaborations.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="skills__container container" id="skills">
+        <div class="skills__column">
+          <h2 translate="no">Hard Skills</h2>
+          <ul>
+            <li><img src="./icons/html.svg" alt="HTML Icon"> HTML (HTML5), EJS, JSX</li>
+            <li><img src="./icons/css.svg" alt="CSS Icon"> CSS (CSS3), SASS (SCSS)</li>
+            <li><img src="./icons/js.svg" alt="JavaScript Icon"> JavaScript (ES6+)</li>
+            <li><img src="./icons/react.svg" alt="React Icon"> React (learning process)</li>
+            <li><img src="./icons/git.svg" alt="Git Icon"> Git</li>
+            <li><img src="./icons/sql.svg" alt="SQL Icon"> SQL</li>
+            <li><img src="./icons/plus.svg" alt="English Icon"> English level - A2</li>
+            <li><img src="./icons/plus.svg" alt="Communication Icon"> Competent written and oral speech</li>
+          </ul>
+        </div>
+        <div class="skills__column">
+          <h2 translate="no">Soft Skills</h2>
+          <ul>
+            <li><img src="./icons/plus.svg" alt="Teamwork Icon"> Teamwork</li>
+            <li><img src="./icons/plus.svg" alt="Communication Icon"> Communication</li>
+            <li><img src="./icons/plus.svg" alt="Problem-solving Icon"> Problem-solving</li>
+            <li><img src="./icons/plus.svg" alt="Adaptability Icon"> Adaptability</li>
+            <li><img src="./icons/plus.svg" alt="Time Management Icon"> Effective time management</li>
+            <li><img src="./icons/plus.svg" alt="Motivation Icon"> Motivation to improve skills and learn new technologies</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="portfolio__container container" id="portfolio">
+        <h2>Portfolio (in process)</h2>
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <img src="./images/secret.png" alt="Secret">
+            <div class="portfolio__overlay">
+              <h3>My large-scale project</h3>
+              <p>In development (Right Now)</p>
+              <a href="#" class="portfolio__link">More detailed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+  </main>
+
+  
+  <footer class="footer" >
+    <div class="footer-inner container">
+      <div class="footer__extra">
+  
+        <div class="footer__soc1als soc1als" id="contacts">
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a 
+              href="https://discord/headachegod" 
+              class="soc1als__link"
+              aria-label=""
+              title="Discord"
+              >
+              <svg class="soc1als__link-svg" width="40" height="40" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000" stroke="#000000">
+  
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff" fill-rule="nonzero"> </path> </g> </g>
+                
+                </svg>
+                 <span class="soc1als__link-span"></span>
+              </a>
+            </li>
+
+            <li class="soc1als__item">
+              <a 
+              href="https://t.me/headachegod" 
+              target="_blank" 
+              class="soc1als__link"
+              aria-label=""
+              title="Telegram"
+              >
+              <svg class="soc1als__link-svg" width="40" height="40" data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M11.99432,2a10,10,0,1,0,10,10A9.99917,9.99917,0,0,0,11.99432,2Zm3.17951,15.15247a.70547.70547,0,0,1-1.002.3515l-2.71467-2.10938L9.71484,17.002a.29969.29969,0,0,1-.285.03894l.334-2.98846.01069.00848.00683-.059s4.885-4.44751,5.084-4.637c.20147-.189.135-.23.135-.23.01147-.23053-.36152,0-.36152,0L8.16632,13.299l-2.69549-.918s-.414-.1485-.453-.475c-.041-.324.46649-.5.46649-.5l10.717-4.25751s.881-.39252.881.25751Z" fill="#6563ff"/></svg>
+                 <span class="soc1als__link-span"></span>
+              </a>
+            </li>
+
+
+
+          </ul>
+        </div>
+  
+        <span class="footer__copyright" translate="no">© <time datetime="2025">2025 </time>R.Egor</span>
+  
+      </div>
+      
+    </div>
+  </footer>
+  
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <a href="#" class="about__photo">
+            <img src="./images/33.jpg" alt="" width="200" height="200">
+            <span>Name</span>
+          </a> -->
+<!-- 
+<p>Мои основные навыки включают:</p>
+            <ul>
+              <li>HTML5, CSS3, SASS, PostCSS</li>
+              <li>JavaScript (ES6+), TypeScript, React</li>
+              <li>Webpack, Vite, Gulp</li>
+              <li>Git, Figma, Adobe Photoshop</li>
+            </ul> -->
