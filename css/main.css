@@ -847,7 +847,6 @@ button[aria-label]::before {
 }
 .portfolio__item {
   position: relative;
-  width: 43.75rem;
   height: 18.75rem;
   border-radius: 0.5rem;
   overflow: hidden;
